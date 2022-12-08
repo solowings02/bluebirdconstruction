@@ -944,7 +944,7 @@ overflow: hidden;}
   }
 }
 
-@media screen and (max-width: 334px) {
+@media screen and (max-width: 319px) {
   html {
     font-size: 40%;
     width: 100vw;
@@ -952,7 +952,7 @@ overflow: hidden;}
   }
   h1 .heading{
     display: inline-block;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
   }
   .about .row .content h3 {
