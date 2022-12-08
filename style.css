@@ -947,7 +947,7 @@ overflow: hidden;}
 @media screen and (max-width: 334px) {
   html {
     font-size: 40%;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
   }
   h1 .heading{
