@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
-  --yellow:rgb(23, 117, 225);
+  --yellow:rgb(0, 119, 225);
   --black: #111;
   --white: #fff;
   --light-color: #666;
@@ -80,7 +80,10 @@ background-color: rgb(180, 180, 180);
   font-size: 1.7rem;
   text-transform: capitalize;
   -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  transition: 0.3s linear;
+  border-radius: 30px;
+  position: relative;
+  height: auto;
 }
 
 .btn:hover {
@@ -168,7 +171,7 @@ background-color: rgb(180, 180, 180);
   /* background: var(--black);
   color: var(--white); */
   background:transparent;
-  color: blue;
+  color:var(--yellow);
   border: 1px solid var(--light-bg);
 }
 
@@ -220,6 +223,8 @@ background-color: rgb(180, 180, 180);
 .header .search-form label:hover {
   color: var(--light-bg);
 }
+
+/* 
 
 .header .login-form {
   position: absolute;
@@ -305,7 +310,7 @@ background-color: rgb(180, 180, 180);
 
 .header .login-form p a:hover {
   text-decoration: underline;
-}
+} */
 
 .contact-info {
   position: fixed;
@@ -404,7 +409,7 @@ background-color: rgb(180, 180, 180);
 
 .swiper {
   width: 100vw;
-  height: 75vh;
+  height: 100%;
   flex-wrap: wrap;
 
 }
@@ -431,8 +436,8 @@ background-color: rgb(180, 180, 180);
 
 .swiper-slide img {
   display:flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 80vh;
   object-fit: cover;
   flex-wrap: wrap;
 }
@@ -517,7 +522,7 @@ background-color: rgb(180, 180, 180);
   right: 7rem;
 }
 .about{ 
-   height: 85%;
+   height: 90%;
   width: 100vw;
 overflow: hidden;}
 
@@ -532,15 +537,12 @@ overflow: hidden;}
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 2rem;
-
-  
+  margin-bottom: 2rem;
 }
 
 .about .row .video {
   -webkit-box-flex: 1;
-  /* -ms-flex: 1 1 41rem; */
   flex: 1 1 50rem;
-  /* flex: 1 1 41rem; */
 }
 
 .about .row .video video {
@@ -574,8 +576,8 @@ overflow: hidden;}
   margin-top: 5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(16rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -613,11 +615,13 @@ overflow: hidden;}
   -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  margin-bottom: 1rem;
 }
 
-.services .box-container .box {
+.services .box-container1 .box {
   text-align: center;
-  padding: 3rem;
+  padding: 2.5rem;
+  height: auto;
   background: var(--white);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
@@ -648,14 +652,17 @@ overflow: hidden;}
   color: var(--light-color);
   line-height: 2;
 }
-
+#moreText{
+  display: inline;
+  text-transform: capitalize;
+}
 
 .projects {
   background: var(--black);
 }
 
 .projects .heading {
-  color: var(--white);
+  color: var(--black);
 }
 
 .projects .box-container {
@@ -795,12 +802,23 @@ overflow: hidden;}
 }
 .footer {
   text-align: center;
+  height: 20%;
+  background-color: var(--light-bg);
+  margin-top: 3rem;
 }
 
 .footer .links .btn {
   margin: 0.5rem;
+  margin-top: 5rem;
 }
-
+.btn .send_msg{
+  background-color: blue;
+  margin-left: 25rem;
+  border-radius: 40px;
+}
+.btn .send_msg:hover{
+  background-color: var(--light-bg);
+}
 .footer .credit {
   font-size: 2rem;
   color: var(--black);
@@ -836,6 +854,7 @@ overflow: hidden;}
   border: var(--border);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
 }
 
 .pricing .box-container .box i {
@@ -942,9 +961,14 @@ overflow: hidden;}
   .home .slide .content h3 {
     font-size: 3rem;
   }
+  .btn.send_msg{
+    background-color: blue;
+    margin-left: 21rem;
+    border-radius: 40px;
+  }
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 340px) {
   html {
     font-size: 40%;
     width: 100vw;
@@ -959,6 +983,11 @@ overflow: hidden;}
     font-size:1.5rem;
     width:  0 auto;
     height: fit-content;
+  }
+  .btn.send_msg{
+    background-color: blue;
+    margin-left: 15rem;
+    border-radius: 40px;
   }
   .icons{
     width: 100vw;
