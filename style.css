@@ -660,7 +660,7 @@ overflow: hidden;}
 }
 
 .projects {
-  background: var(--black);
+  background-color: var(--light-bg);
 }
 
 .projects .heading {
@@ -765,7 +765,7 @@ overflow: hidden;}
   flex: 1 1 41rem;
   background: var(--white);
   padding: 2rem;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 
@@ -813,12 +813,12 @@ overflow: hidden;}
   margin: 0.5rem;
   margin-top: 5rem;
 }
-.btn .send_msg{
+.send_msg{
   background-color: blue;
   margin-left: 25rem;
   border-radius: 40px;
 }
-.btn .send_msg:hover{
+.send_msg:hover{
   background-color: var(--light-bg);
 }
 .footer .credit {
@@ -838,7 +838,7 @@ overflow: hidden;}
 
 
 .pricing {
-  background: var(--light-bg);
+  background-color: var(--light-bg);
 }
 
 .pricing .box-container {
