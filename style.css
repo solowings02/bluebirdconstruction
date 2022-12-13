@@ -673,6 +673,7 @@ overflow: hidden;}
   -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .projects .box-container .box {
@@ -727,7 +728,7 @@ overflow: hidden;}
 .projects .box-container .box .content i {
   width: 7.5rem;
   font-size: 3rem;
-  background: var(--light-bg);
+  background: var(--yellow);
   color: var(--white);
   cursor: pointer;
   text-align: center;
@@ -799,6 +800,7 @@ overflow: hidden;}
   border-bottom: 1px solid var(--yellow);
   border-color: var(--yellow);
   text-align: center;
+  font-weight: 700;
   justify-content: center;
 
 }
@@ -965,7 +967,7 @@ overflow: hidden;}
   }
   .btn.send_msg{
     background-color: blue;
-    margin-left: 21rem;
+    margin-left: 15rem;
     border-radius: 40px;
   }
 }
@@ -988,7 +990,7 @@ overflow: hidden;}
   }
   .btn.send_msg{
     background-color: blue;
-    margin-left: 15rem;
+    margin-left: 8rem;
     border-radius: 40px;
   }
   .icons{
