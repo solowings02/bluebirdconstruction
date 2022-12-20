@@ -114,7 +114,7 @@ section {
   right: 0;
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
-  padding: 1.5rem 10%;
+  padding: 1rem 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,8 +433,8 @@ section {
 .swiper-slide img {
   display: flex;
   width: 100vw;
-  height: 80vh;
-  object-fit: cover;
+  height: 83vh;
+  object-fit: fill;
   flex-wrap: wrap;
 }
 
