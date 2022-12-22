@@ -886,6 +886,24 @@ section {
   color: var(--light-color);
   line-height: 2;
 }
+.notes{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.notes h3{
+  font-size: 1.7rem;
+  font-weight: 600;
+  color:gray;
+}
+.notes h2 {
+  color: rgb(16, 108, 247);
+  font-size: 30px;
+  font-weight: 600;
+
+}
 
 @media screen and (max-width: 1024px) {
   html {
