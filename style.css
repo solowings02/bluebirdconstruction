@@ -145,7 +145,8 @@ section {
 }
 
 .header .navbar a {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
   color: var(--black);
   text-transform: capitalize;
   margin: 0 1rem;
@@ -161,17 +162,15 @@ section {
   line-height: 5rem;
   font-size: 2rem;
   border-radius: 25%;
-  background: var(--light-bg);
-  color: var(--box-shadow);
+  background: var(--yellow);
+  color: var(--light-bg);
   cursor: pointer;
   text-align: center;
   margin-left: 0.3rem;
 }
 
 .header .icons div:hover {
-  /* background: var(--black);
-  color: var(--white); */
-  background: transparent;
+  background:var(--white);
   color: var(--yellow);
   border: 1px solid var(--light-bg);
 }
